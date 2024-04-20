@@ -28,8 +28,17 @@ li{
     margin: 10px;
     padding: 20px;
     box-shadow: 2px 2px 10px 2px #BC7FCD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.inicioimg
+{
+    max-width: 200px;
+    margin-top: 20px;
+}
 #inicio_subscribirse
 {
    padding: 20px;
