@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+#inicio_seccion
+{
+    display: flex;
+    padding: 10px;
+    margin: 3em;
+}
+
+.inicio_articulos
+{
+    border-style: solid #BC7FCD;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px 2px #BC7FCD;
+}
+
+#inicio_subscribirse
+{
+   padding: 20px;
+   background-color: #FFCDEA;
+}
