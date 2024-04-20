@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patitas Adopciones</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,7 +18,13 @@
         <nav>
             <ul>
                 <li><a href="index.html" title="index">Inicio</a></li>
-                <li><a href="site/adopciones.html" title="adopciones">Adoptar</a></li>
+                <li id="adopciones-nav"><a href="site/adopciones.html" title="adopciones">Adoptar</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="">Perros</a></li>
+                        <li><a href="">Gatos</a></li>
+                        <li><a href="">Otros</a></li>
+                    </ul>
+                </li>
                 <li><a href="site/voluntariado.html" title="voluntariado">Voluntariado</a></li>
                 <li><a href="site/contactanos.html" title="contactanos">Contactanos</a></li>
                 <li><a href="site/noticias.html" title="noticias">Noticias</a></li>
@@ -29,41 +34,51 @@
             <input type="search">
             <button type="submit">Buscar</button>
         </span>
-
     </header>
     <main>
-        <section id="inicio_seccion">
+        <div id="inicio_seccion">
             <article class="inicio_articulos">
                 <h2>Hogares de Transito</h2>
-                <img src="" alt="imagen_hogar">
+                <!-- <img src="" alt="imagen_hogar"> -->
+                <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
                     harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
                     exercitationem?</p>
-                <button><a href="">Ver más</a></button>
+                <button>Ver más</button>
             </article>
             <article class="inicio_articulos">
                 <h2>Patita de la Semana</h2>
-                <img src="" alt="img_semana">
+                <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
+                <p>Foto por <a href="https://unsplash.com/@thomascpark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thomas Park</a> en <a href="https://unsplash.com/photos/shallow-focus-photography-of-black-kitten-On6bRQRn5lY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
                     harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
                     exercitationem?</p>
-                <button><a href="">Ver más</a></button>
+                <button>Ver más</button>
             </article>
             <article class="inicio_articulos">
                 <h2>Donaciones</h2>
-                <img src="" alt="img_donar">
+                <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
+                <!-- <img src="" alt="img_donar"> -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
                     harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
                     exercitationem?</p>
-                <button><a href="">Ver más</a></button>
+                <button>Ver más</button>
             </article>
-        </section>
+        </div>
         <section id="inicio_subscribirse">
             <h4>Subscribite a nuestro newsletter para recibir todas las noticias!</h4>
             <img src="" alt="subscribirse_perro">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Email">
-            <button type="submit">Subscribirse</button>
+            <form action="/subscribirse">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="enviar"></label>
+                <input type="submit" name="enviar" id="enviar" value="Subscribirse">
+                <div id="acepto">
+                    <input type="checkbox" name="acepto" id="acepto" required>
+                    <label for="acepto">Acepto recibir noticias e informes :D</label>
+                </div>          
+            </form>
         </section>
     </main>
     <footer>
