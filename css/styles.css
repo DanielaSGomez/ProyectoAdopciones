@@ -6,6 +6,17 @@
     font-style: normal;
 }
 
+#header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
 a{
     text-decoration: none;
 }
@@ -32,6 +43,11 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.inicio_articulos h2{
+    font-weight: 500;
+    font-size: 2em;
 }
 
 .inicioimg
@@ -73,8 +89,7 @@ li{
 .campoForm
 {
     margin: 1em 0.5em;
-    font-size: large;
-    
+    font-size: large;  
 }
 
 #acepto{
