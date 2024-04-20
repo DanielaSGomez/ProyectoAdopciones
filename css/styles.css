@@ -35,3 +35,32 @@ li{
    padding: 20px;
    background-color: #FFCDEA;
 }
+
+.nav-dropdown
+{
+    display: none;
+}
+
+#adopciones-nav:hover{
+    .nav-dropdown{
+        display: block;
+    }
+}
+
+#form-contacto
+{
+    background-color: #BC7FCD;
+    border-radius: 3px;
+    margin: 2em;
+    padding: 10px;
+}
+
+#formulario
+{
+    margin: 2em 0.5em;
+
+}
+
+#acepto{
+    font-size: small;
+}
