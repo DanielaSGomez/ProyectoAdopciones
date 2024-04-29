@@ -39,6 +39,7 @@ li{
     max-width: 200px;
     margin-top: 20px;
 }
+
 #inicio_subscribirse
 {
    padding: 20px;
@@ -50,11 +51,11 @@ li{
     display: none;
 }
 
-#adopciones-nav:hover{
+/* #adopciones-nav:hover{
     .nav-dropdown{
         display: block;
     }
-}
+} */
 
 #form-contacto
 {
