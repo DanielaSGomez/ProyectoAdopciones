@@ -30,6 +30,45 @@
 
     </header>
     <main>
+        <div id="form-contacto">
+            <div id="titulo-form">
+                <h2>Convertite en voluntario para ayudar</h2>
+                <img src="" alt="icono-contacto">
+                <p>Completa el formulario y nos vamos a comunicar a la brevedad</p>
+            </div>
+
+            <!--crear el action post del form -->
+            <form action="/contacto" id="formulario">
+                <div class="campoForm">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
+                </div>
+                <div class="campoForm">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese apellido" required>
+                </div>
+                <div class="campoForm">
+                    <label for="nombre">Telefono</label>
+                    <input type="tel" name="celular" id="celular" placeholder="Ingrese telefono/celular">
+                </div>
+                <div class="campoForm">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese email" required>
+                </div>
+                
+                <div class="campoForm">
+                    <br>
+                    <label for="comentarios">Cualquier otra informacion importante que tengamos que saber :)</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5" maxlength="300" placeholder="Escribir..."></textarea>
+                </div>
+                <div class="campoForm">
+                    <label for="enviar"></label>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                </div>       
+            </form>
+
+        </div>
        
       
     </main>
