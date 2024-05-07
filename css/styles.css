@@ -14,7 +14,62 @@ li{
     list-style: none;
 }
 
-#inicio_seccion
+h1{
+    letter-spacing: 0.75em;
+}
+
+.container_header
+{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f4f1eb; */
+}
+
+.links_navbar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.links_navbar li{
+    padding: 2% 5%;
+    margin: 0 5%;
+    transition: all 0.5s ease-out;
+   
+}
+
+.links_navbar li:hover{
+    background-color: #d0dda1c7;
+    border-style: none;
+    border-radius: 10%;
+}
+
+.links_navbar a{
+    color: black;
+    font-size: 1.2em;
+}
+
+#buscar_nav
+{
+    position: relative;
+}
+
+#banner_patita
+{
+    border-style: 3px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px 2px #b6b0a4;
+}
+
+.inicio_seccion
 {
     display: flex;
     padding: 10px;
@@ -23,16 +78,22 @@ li{
 
 .inicio_articulos
 {
-    border-style: solid #BC7FCD;
+    border-style: 3px solid black;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
-    box-shadow: 2px 2px 10px 2px #BC7FCD;
+    box-shadow: 2px 2px 10px 2px #b6b0a4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.inicio_articulos:hover{
+    background-color: #d0dda1c7;
+    transition: background-color 0.5s ease-out;
+}
+
 
 .inicioimg
 {
@@ -43,7 +104,7 @@ li{
 #inicio_subscribirse
 {
    padding: 20px;
-   background-color: #FFCDEA;
+   background-color: #d0dda1c7;
 }
 
 .nav-dropdown
@@ -59,7 +120,7 @@ li{
 
 #form-contacto
 {
-    background-color: #BC7FCD;
+    background-color: #efcaa8;
     border-radius: 3px;
     margin: 2em;
     padding: 10px;
