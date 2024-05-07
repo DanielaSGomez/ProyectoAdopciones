@@ -69,6 +69,10 @@ h1{
     font-size: 2em;
   }
 
+  #closenav
+  {
+    display: none;
+  }
 
 #banner_patita
 {
@@ -104,6 +108,10 @@ h1{
 .inicio_articulos:hover{
     background-color: #d0dda1c7;
     transition: background-color 0.5s ease-out;
+    .articleButton{
+        background-color: white;
+        border-color: #b6b0a4;
+    }
 }
 
 
@@ -144,19 +152,78 @@ h1{
     font-size: small;
 }
 
-@media (max-width: 1200px) {
+button{
+    border: solid 1px  #738f1034 ;
+    font-size: 1em;
+    background-color: #d0dda1;
+    padding: 0.6em 1em;
+    border-radius: 5%;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: #aec55a;
+}
+
+
+#closenav{
+    font-size: 1.5em;
+    border: none;
+    border-radius: 20%;
+    background-color: transparent;
+    color: rgb(3, 42, 6);
+}
+
+@media screen and (max-width: 1200px) {
     #logoimg
     {
         display: none;
     }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     #navheader{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color:#d0dda1;
+        padding: 1em;
+        gap: 1rem;
     }
+
+    #navheader{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #navheader.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .links_navbar{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .links_navbar li{
+        transition: all 0.5s ease-out;
+       
+    }
+    .links_navbar li:hover{
+        background-color: #4555129a;
+    }
+
     .navbar-toggle {
         display: block; 
+    }
+    #closenav
+    {
+      display: block;
     }
     .container_header{
         padding: 2% 3% 0 2%;
@@ -170,22 +237,14 @@ h1{
 }
 
 @media (max-width: 600px) {
-    #navheader{
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .container_header{
-        padding: 2% 3% 0 2%;
-    }
-    #logoimg
-    {
-        display: none;
-    }
+
 
     .inicio_seccion{
         display: block;
+    }
+
+    h1{
+        font-size: 2em;
     }
 
 }
