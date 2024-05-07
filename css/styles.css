@@ -21,7 +21,7 @@ h1{
 .container_header
 {
     display: flex;
-    padding: 0 10% 0 2%;
+    padding: 2% 10% 0 2%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -151,7 +151,7 @@ h1{
         display: block; 
     }
     .container_header{
-        padding: 0 3% 0 2%;
+        padding: 2% 3% 0 2%;
     }
 
 }
@@ -164,7 +164,7 @@ h1{
         display: block;
     }
     .container_header{
-        padding: 0 3% 0 2%;
+        padding: 2% 3% 0 2%;
     }
     #logoimg
     {
