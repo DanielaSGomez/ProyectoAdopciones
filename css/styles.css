@@ -16,6 +16,7 @@ li{
 
 h1{
     letter-spacing: 0.75em;
+    font-size: 3em;
 }
 
 .container_header
@@ -143,6 +144,13 @@ h1{
     font-size: small;
 }
 
+@media (max-width: 1200px) {
+    #logoimg
+    {
+        display: none;
+    }
+}
+
 @media (max-width: 1000px) {
     #navheader{
         display: none;
@@ -154,9 +162,14 @@ h1{
         padding: 2% 3% 0 2%;
     }
 
+    #logoimg
+    {
+        display: none;
+    }
+
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #navheader{
         display: none;
     }
@@ -169,6 +182,10 @@ h1{
     #logoimg
     {
         display: none;
+    }
+
+    .inicio_seccion{
+        display: block;
     }
 
 }
