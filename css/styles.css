@@ -160,12 +160,19 @@ h1{
     width: 50px;
 }
 
-#form-contacto
+.body_voluntarios{
+    display: flex;
+    padding: 20%;
+    justify-content: center;
+    align-items: center;
+}
+#container_contacto
 {
-    background-color: #efcaa8;
-    border-radius: 3px;
-    margin: 2em;
-    padding: 10px;
+    background-color: #569A76;
+    padding: 10%;
+    border-radius: 32px;
+    text-align: center;
+    box-shadow: 60px -16px rgba(11, 128, 0, 0.365);
 }
 
 #formulario
