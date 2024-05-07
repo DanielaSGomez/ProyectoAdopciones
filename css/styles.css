@@ -21,13 +21,20 @@ h1{
 .container_header
 {
     display: flex;
-    padding: 10px;
+    padding: 0 10% 0 2%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* background-color: #f4f1eb; */
+    width: 100%;
 }
 
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .links_navbar
 {
     display: flex;
@@ -55,10 +62,6 @@ h1{
     font-size: 1.2em;
 }
 
-#buscar_nav
-{
-    position: relative;
-}
 
 #banner_patita
 {
@@ -72,8 +75,10 @@ h1{
 .inicio_seccion
 {
     display: flex;
-    padding: 10px;
-    margin: 3em;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
 }
 
 .inicio_articulos
