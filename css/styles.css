@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -21,13 +22,15 @@ h1{
 
 .container_header
 {
+    position: fixed;
     display: flex;
     padding: 2% 10% 0 2%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #f4f1eb; */
     width: 100%;
+    z-index: 10;
+    transition: 0.6s;
 }
 
 .logo{
@@ -69,7 +72,25 @@ h1{
     font-size: 2em;
   }
 
+#closenav
+{
+    display: none;
+}
 
+#logoimg
+{
+    width: 50px;
+}
+
+.banner
+{
+    position: relative;
+    background: url(../img/banner_semana.jpg) ;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: top;
+}
 #banner_patita
 {
     border-style: 3px solid black;
@@ -78,6 +99,7 @@ h1{
     padding: 20px;
     box-shadow: 2px 2px 10px 2px #b6b0a4;
 }
+
 
 .inicio_seccion
 {
@@ -102,8 +124,12 @@ h1{
 }
 
 .inicio_articulos:hover{
-    background-color: #d0dda1c7;
+    background-color: #569A76;
     transition: background-color 0.5s ease-out;
+    .articleButton{
+        background-color: white;
+        border-color: #b6b0a4;
+    }
 }
 
 
@@ -115,8 +141,19 @@ h1{
 
 #inicio_subscribirse
 {
-   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
    background-color: #d0dda1c7;
+   width: 80%;
+   padding: 3em;
+   margin: auto;
+   gap: 1rem;
+   
+}
+
+.icono{
+    width: 50px;
 }
 
 #form-contacto
@@ -144,19 +181,78 @@ h1{
     font-size: small;
 }
 
-@media (max-width: 1200px) {
+button{
+    border: solid 1px  #738f1034 ;
+    font-size: 1em;
+    background-color: #569A76;
+    padding: 0.6em 1em;
+    border-radius: 5%;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: #569A76;
+}
+
+
+#closenav{
+    font-size: 1.5em;
+    border: none;
+    border-radius: 20%;
+    background-color: transparent;
+    color: rgb(3, 42, 6);
+}
+
+@media screen and (max-width: 1200px) {
     #logoimg
     {
         display: none;
     }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     #navheader{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color:#d0dda1;
+        padding: 1em 2em;
+        gap: 1rem;
     }
+
+    #navheader{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #navheader.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .links_navbar{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .links_navbar li{
+        transition: all 0.5s ease-out;
+       
+    }
+    .links_navbar li:hover{
+        background-color: #4555129a;
+    }
+
     .navbar-toggle {
         display: block; 
+    }
+    #closenav
+    {
+      display: block;
     }
     .container_header{
         padding: 2% 3% 0 2%;
@@ -170,22 +266,14 @@ h1{
 }
 
 @media (max-width: 600px) {
-    #navheader{
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .container_header{
-        padding: 2% 3% 0 2%;
-    }
-    #logoimg
-    {
-        display: none;
-    }
+
 
     .inicio_seccion{
         display: block;
+    }
+
+    h1{
+        font-size: 2em;
     }
 
 }
