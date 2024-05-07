@@ -141,8 +141,19 @@ h1{
 
 #inicio_subscribirse
 {
-   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
    background-color: #d0dda1c7;
+   width: 80%;
+   padding: 3em;
+   margin: auto;
+   gap: 1rem;
+   
+}
+
+.icono{
+    width: 50px;
 }
 
 #form-contacto
