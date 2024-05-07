@@ -12,60 +12,54 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>PATITAS ADOPCIONES</h1>
-        <img src="" alt="icono_titulo">
-        <nav>
-            <ul>
-                <li><a href="index.html" title="index">Inicio</a></li>
-                <li id="adopciones-nav"><a href="site/adopciones.html" title="adopciones">Adoptar</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="">Perros</a></li>
-                        <li><a href="">Gatos</a></li>
-                        <li><a href="">Otros</a></li>
-                    </ul>
+    <header class="container_header">
+        <span class="logo">
+            <h1>PATITAS</h1>
+            <img src="" alt="icono_titulo" id="logoimg">
+        </span>       
+        <nav id="navheader">
+            <ul class="links_navbar">
+                <li><a href="index.html" title="index">INICIO</a></li>
+                <li id="adopciones-nav"><a href="site/adopciones.html" title="adopciones">ADOPTAR</a>
                 </li>
-                <li><a href="site/voluntariado.html" title="voluntariado">Voluntariado</a></li>
-                <li><a href="site/contactanos.html" title="contactanos">Contactanos</a></li>
-                <li><a href="site/noticias.html" title="noticias">Noticias</a></li>
+                <li><a href="site/voluntariado.html" title="voluntariado">VOLUNTARIADO</a></li>
+                <li><a href="site/donar.html" title="donar">DONAR</a></li>
             </ul>
         </nav>
-        <span>
-            <input type="search">
-            <button type="submit">Buscar</button>
-        </span>
+        <span class="navbar-toggle" id="navbarToggle">&#9776;</span>
     </header>
     <main>
-        <div id="inicio_seccion">
-            <article class="inicio_articulos">
-                <h2>Hogares de Transito</h2>
-                <!-- <img src="" alt="imagen_hogar"> -->
+        <div class="inicio_seccion">
+            <article id="banner_patita">         
                 <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
-                    harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
-                    exercitationem?</p>
-                <button>Ver más</button>
-            </article>
-            <article class="inicio_articulos">
                 <h2>Patita de la Semana</h2>
-                <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
-                <p>Foto por <a href="https://unsplash.com/@thomascpark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thomas Park</a> en <a href="https://unsplash.com/photos/shallow-focus-photography-of-black-kitten-On6bRQRn5lY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
                     harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
                     exercitationem?</p>
-                <button>Ver más</button>
-            </article>
-            <article class="inicio_articulos">
-                <h2>Donaciones</h2>
-                <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
-                <!-- <img src="" alt="img_donar"> -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
-                    harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
-                    exercitationem?</p>
-                <button>Ver más</button>
+                <button>Quiero Adoptarlo!</button>
             </article>
         </div>
+        
+
+        <div class="inicio_seccion">          
+            <article class="inicio_articulos">
+                <h2>Hogares de Transito</h2>
+                <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
+                    harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
+                    exercitationem?</p>
+                <button>Ver más</button>
+            </article>
+         
+            <article class="inicio_articulos"> 
+                <h2>Donaciones</h2>
+                <img src="img/gatitonegro.jpg" alt="img_semana" class="inicioimg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos, natus dolorem animi ad
+                    harum sit ut nobis nulla quasi autem dolore quisquam ipsam totam suscipit saepe unde fugiat
+                    exercitationem?</p>
+                <button>Ver más</button>
+            </article>
+        </div> 
         <section id="inicio_subscribirse">
             <h4>Subscribite a nuestro newsletter para recibir todas las noticias!</h4>
             <img src="" alt="subscribirse_perro">
@@ -84,6 +78,6 @@
     <footer>
 
     </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>

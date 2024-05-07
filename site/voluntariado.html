@@ -12,25 +12,60 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>PATITAS ADOPCIONES</h1>
-        <img src="" alt="icono_titulo">
+    <header class="container_header">
+        <span class="logo">
+            <h1>PATITAS</h1>
+            <img src="" alt="icono_titulo">
+        </span>       
         <nav>
-            <ul>
-                <li><a href="../index.html" title="index">Inicio</a></li>
-                <li><a href="adopciones.html" title="adopciones">Adoptar</a></li>
-                <li><a href="voluntariado.html" title="voluntariado">Voluntariado</a></li>
-                <li><a href="contactanos.html" title="contactanos">Contactanos</a></li>
-                <li><a href="noticias.html" title="noticias">Noticias</a></li>
+            <ul class="links_navbar">
+                <li><a href="../index.html" title="index">INICIO</a></li>
+                <li><a href="adopciones.html" title="adopciones">ADOPTAR</a></li>
+                <li><a href="voluntariado.html" title="voluntariado">VOLUNTARIADO</a></li>
+                <li><a href="donar.html" title="donar">DONAR</a></li>
             </ul>
         </nav>
-        <span>
-            <input type="search">
-            <button type="submit">Buscar</button>
-        </span>
-
     </header>
     <main>
+        <div id="form-contacto">
+            <div id="titulo-form">
+                <h2>Convertite en voluntario para ayudar</h2>
+                <img src="" alt="icono-contacto">
+                <p>Completa el formulario y nos vamos a comunicar a la brevedad</p>
+            </div>
+
+            <!--crear el action post del form -->
+            <form action="/contacto" id="formulario">
+                <div class="campoForm">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
+                </div>
+                <div class="campoForm">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese apellido" required>
+                </div>
+                <div class="campoForm">
+                    <label for="nombre">Telefono</label>
+                    <input type="tel" name="celular" id="celular" placeholder="Ingrese telefono/celular">
+                </div>
+                <div class="campoForm">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese email" required>
+                </div>
+                
+                <div class="campoForm">
+                    <br>
+                    <label for="comentarios">Cualquier otra informacion importante que tengamos que saber :)</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5" maxlength="300" placeholder="Escribir..."></textarea>
+                </div>
+                <div class="campoForm">
+                    <label for="enviar"></label>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                </div>       
+            </form>
+
+        </div>
        
       
     </main>
