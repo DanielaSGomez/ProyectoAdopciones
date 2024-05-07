@@ -9,6 +9,3 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () =>{
     nav.classList.remove("visible");
 });
-
-
-
