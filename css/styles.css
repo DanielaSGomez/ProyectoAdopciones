@@ -1,75 +1,102 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url(..//fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
 *{
+    box-sizing: border-box;
+}
+
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
-a{
-    text-decoration: none;
-}
+/* ------ Header -------- */
 
-li{
-    list-style: none;
-}
-
-h1{
-    letter-spacing: 0.75em;
-    font-size: 3em;
-}
+/* Logo */
 
 .container_header
 {
-    position: fixed;
+    position:absolute;
     display: flex;
-    padding: 2% 10% 0 2%;
+    padding:1em 2em;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
     transition: 0.6s;
 }
 
 .logo{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
+
+#logoimg{
+    width: 85px;
+    height: 70px;
+    
+}
+
+h1{
+    padding-left: 0.5em;
+    font-family: "Poppins";
+    font-size: 2.75em;
+    letter-spacing: 0.30em;
+    font-weight:bolder;
+    color: #454545;
+}
+
+/* Nav */
+
+.nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .links_navbar
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    transition: all 0.5s ease-out;
 
 }
 
-.links_navbar li{
-    padding: 2% 5%;
-    margin: 0 5%;
-    transition: all 0.5s ease-out;
-   
+a{
+    font-family: "Poppins";
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+}
+
+
+li{
+    margin: 2.5px;
+    padding: 12.5px;
 }
 
 .links_navbar li:hover{
-    background-color: #d0dda1c7;
+    background-color: #454545;
     border-style: none;
-    border-radius: 10%;
-}
-
-.links_navbar a{
-    color: black;
-    font-size: 1.2em;
+    border-radius: 5px;
 }
 
 .navbar-toggle {
     display: none;
     cursor: pointer;
     font-size: 2em;
+    padding-right: 0.5em;
+    color: #454545;
   }
 
 
@@ -78,17 +105,13 @@ h1{
     display: none;
 }
 
-#logoimg
-{
-    width: 50px;
-}
-
 .banner
 {
     position: relative;
+    background-repeat: no-repeat;
     background: url(../img/banner_semana.jpg) ;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-size: cover;
     background-position: top;
 }
@@ -157,6 +180,17 @@ h1{
     width: 50px;
 }
 
+#adoptar {
+    background-color: #454545;
+    border-radius: 5px;
+} 
+
+li{
+    list-style: none;
+}
+
+
+/* ------------ Footer --------- */
 #form-contacto
 {
     background-color: #efcaa8;
@@ -183,11 +217,11 @@ h1{
 }
 
 button{
-    border: solid 1px  #738f1034 ;
+    border: solid 1px  #454545 ;
     font-size: 1em;
     background-color: #569A76;
     padding: 0.6em 1em;
-    border-radius: 5%;
+    border-radius: 5px;
     cursor: pointer;
     
 }
@@ -202,8 +236,119 @@ button:hover{
     border: none;
     border-radius: 20%;
     background-color: transparent;
-    color: rgb(3, 42, 6);
+    color: aliceblue;
+
 }
+
+/* -------- FOOTER --------- */
+
+.section-flex{
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* -------- Seccion I --------- */
+.container-footer{
+    background-color: #569A76;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-seccion{
+    padding: 2em;
+}
+
+.section1-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img-footer{
+    height: 50%;
+    width: 50%;
+}
+
+.footer-seccion h1{
+    padding-left: 0;
+    font-family: "Inconsolata";
+
+}
+
+/* -------- Seccion II --------- */
+
+.links-footer-section{
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.links-footer-section :hover{
+    color: #454545;
+    border-radius: 5px;
+}
+
+/* -------- Seccion III --------- */
+
+.new-footer{
+    padding: 1em;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Inconsolata";
+}
+
+.new-footer-section p{
+   margin-top: 1em;
+    
+}
+
+#email{
+    text-align: center;
+    background-color: aliceblue;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #454545;
+    
+
+}
+
+.new-footer-section h2{
+    padding: 0.5em;
+    font-size: 1em;
+    color: aliceblue;
+    background-color: #454545;
+    border-radius: 5px;
+}
+#acepto{
+    padding-bottom: 1.5em;
+}
+
+/* -------- Proyecto PATITAS --------- */
+
+
+.proyecto-patitas{
+    text-align: center;
+    background-color: #454545;
+}
+
+.proyecto-patitas p{
+    font-family: "Inconsolata";
+    color: aliceblue;
+    margin: 0;
+    padding: 1em;
+    letter-spacing: 1px;
+
+}
+
+/* -------- Responsive --------- */
 
 @media screen and (max-width: 1200px) {
     #logoimg
@@ -220,9 +365,11 @@ button:hover{
         position: absolute;
         top: 0;
         right: 0;
-        background-color:#d0dda1;
+        background-color:#454545;
         padding: 1em 2em;
         gap: 1rem;
+        width: 100%;
+        height: 100vh;
     }
 
     #navheader{
@@ -245,7 +392,7 @@ button:hover{
        
     }
     .links_navbar li:hover{
-        background-color: #4555129a;
+        background-color: #454545;
     }
 
     .navbar-toggle {
@@ -264,9 +411,39 @@ button:hover{
         display: none;
     }
 
+    ul a:hover{
+        color: #454545;
+        background-color: aliceblue;
+        padding: 5px;
+        border: 1px;
+        border-radius: 5px;
+    }
+
+    /* RESPONSIVE FOOTER */
+    .section-flex{
+        padding-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 600px) {
+
+    .footer-seccion{
+        padding-top: 0;
+    }
+
+    .img-footer{
+        height: 100%;
+    }
+
+    .titulo-footer{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
 
 
     .inicio_seccion{
