@@ -145,6 +145,8 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins";
+    font-weight: normal;
 }
 
 .inicio_articulos:hover{
